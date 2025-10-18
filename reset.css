@@ -53,7 +53,6 @@ a {
 textarea {
     resize: none;
     field-sizing: content;
-    max-height: 5rem; /* Edit this value */
 }
 
 @media (prefers-reduced-motion: reduce) {
