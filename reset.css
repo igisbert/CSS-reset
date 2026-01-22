@@ -1,18 +1,19 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    interpolate-size: allow-keywords;
+  scroll-behavior: smooth;
+  interpolate-size: allow-keywords;
+  text-size-adjust: 100%;
 }
 
 body {
-    margin: 0;
-    min-height: 100lvh;
-    -webkit-font-smoothing: antialiased;
+  margin: 0;
+  min-height: 100lvh;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -21,12 +22,12 @@ h3,
 h4,
 h5,
 h6 {
-    text-wrap: balance;
+  text-wrap: balance;
 }
 
 p {
-    text-wrap: pretty;
-    margin-block: 1lh;
+  text-wrap: pretty;
+  margin-block: 1lh;
 }
 
 img,
@@ -34,8 +35,8 @@ picture,
 svg,
 video,
 canvas {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 button,
@@ -43,30 +44,30 @@ a,
 input,
 label,
 select {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
-    text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 textarea {
-    resize: none;
-    field-sizing: content;
+  resize: none;
+  field-sizing: content;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-        interpolate-size: numeric-only;
-    }
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-        transition: none;
-    }
+  html {
+    scroll-behavior: auto;
+    interpolate-size: numeric-only;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
 }
